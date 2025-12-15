@@ -46,7 +46,13 @@ export default defineConfig([
       ],
       eqeqeq: "error",
       "@typescript-eslint/no-shadow": "warn",
+      "import/order": "warn",
+      "import/extensions": ["error", "ignorePackages"],
       "import/consistent-type-specifier-style": ["error", "prefer-inline"],
+      "no-restricted-exports": [
+        "error",
+        { restrictDefaultExports: { direct: true } },
+      ],
       "@typescript-eslint/consistent-type-imports": [
         "warn",
         { prefer: "type-imports", fixStyle: "inline-type-imports" },
